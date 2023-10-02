@@ -14,3 +14,10 @@ $ go mod init example/hello
 ```bash
 $ go mod tidy
 ```
+
+### go mod edit -replace example.com/greetings=../greetings
+- example.com/greetingsを./greetingsに置き換えて、依存関係の場所を特定する
+- 以下のような行が`go.mod`に追加される
+```go
+replace example.com/greetings => ../greetings
+```
