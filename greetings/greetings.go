@@ -16,6 +16,7 @@ func Hello(name string) (string, error) {
 }
 
 func Hellos(names []string) (map[string]string, error) {
+	// make(map[key-type]value-type)という構文でマップを初期化する
 	messages := make(map[string]string)
 
 	for _, name := range names {
